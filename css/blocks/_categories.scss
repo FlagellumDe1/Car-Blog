@@ -1,0 +1,56 @@
+.categories{
+    margin-bottom: 30px;
+    &__title{
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+
+    &__list{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+
+        @include desktop-S{
+            gap: 15px;
+        }
+
+        @include tablet{
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        padding: 15px;
+        background: var(--color-pink);
+        height: 100%;
+        border-radius: 10px;
+        transition: 0.3s;
+
+
+        &-image{
+            margin-bottom: 30px;
+        }
+
+        @include hover{
+            background: var(--color-pink-hover);
+        }
+    }
+
+
+    &__name{
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &__description{
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+}
