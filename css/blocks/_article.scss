@@ -1,11 +1,15 @@
 .article{
     &__banner{
         width: 100%;
-        aspect-ratio: 1.5;
+        aspect-ratio: 2.35;
         margin-bottom: 20px;
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
+        
+        @include mobile{
+            aspect-ratio: 1.5;
+        }
     }
 
     &__title{

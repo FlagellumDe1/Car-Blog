@@ -161,11 +161,16 @@ a {
 
 .article__banner {
   width: 100%;
-  aspect-ratio: 1.5;
+  aspect-ratio: 2.35;
   margin-bottom: 20px;
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .article__banner {
+    aspect-ratio: 1.5;
+  }
 }
 .article__title {
   font-size: 48px;
